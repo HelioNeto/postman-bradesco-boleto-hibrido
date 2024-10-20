@@ -1,0 +1,4 @@
+//Inserir no Post-Respose do Config.
+//GET na URL: http://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js
+//Vai importar todo o conteúdo do JAVASCRIPT dessa biblioteca jsrsasign para uma variável global: server_to_server_jsrsasign-js
+pm.globals.set("server_to_server_jsrsasign-js", responseBody)
