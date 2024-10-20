@@ -2,13 +2,13 @@
 Esse Script vai te auxiliar nos Testes de Integração com o Boleto Hibrido do Bradesco.
 
 ## 1º - Crie as Variaveis Globais
-| Variable | Type | Initial value | Current value
-| ------------------------------------------------------------------- | -------------------- | --------------------------- | --------------------------- |
-|  server_to_server_access_token_proxy                  | &nbsp;default | &nbsp;CLIENT_ID | &nbsp;CLIENT_ID
-|  server_to_server_aud_proxy                           | &nbsp;default | &nbsp;https://proxy.api.prebanco.com.br/auth/server/v1.2/token | &nbsp;https://proxy.api.prebanco.com.br/auth/server/v1.2/token
-|  server_to_server_auth_token_proxy                    | &nbsp;default | &nbsp;https://proxy.api.prebanco.com.br/auth/server/v1.2/token | &nbsp;https://proxy.api.prebanco.com.br/auth/server/v1.2/token
-|  server_to_server_privateKey_proxy                    | &nbsp;default | &nbsp;TEXTO_CERTIFICADO_KEY_SEM_ESPAÇO | &nbsp;TEXTO_CERTIFICADO_KEY_SEM_ESPAÇO
-|  server_to_server_jsrsasign-js                        | &nbsp; | &nbsp; | 
+| Variable | Type | Current value
+| ------------------------------------------------------------------- | -------------------- | --------------------------- |
+|  server_to_server_access_token_proxy                  | &nbsp;default | &nbsp;CLIENT_ID |
+|  server_to_server_aud_proxy                           | &nbsp;default | &nbsp;https://proxy.api.prebanco.com.br/auth/server/v1.2/token |
+|  server_to_server_auth_token_proxy                    | &nbsp;default | &nbsp;https://proxy.api.prebanco.com.br/auth/server/v1.2/token |
+|  server_to_server_privateKey_proxy                    | &nbsp;default | &nbsp;TEXTO_CERTIFICADO_KEY_SEM_ESPAÇO |
+|  server_to_server_jsrsasign-js                        | &nbsp; | &nbsp; |
 
 ## 2º - Crie uma Requisição para o jsrsasign
 Essa é a bilioteca que é usada para realizar a Assinatura dos Arquivos para Enviar para o Bradesco.
@@ -17,7 +17,7 @@ Méthodo: `GET`
 
 URL:
 ```
-[https://proxy.api.prebanco.com.br/v1/boleto/registrarBoleto](http://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js)
+http://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js
 ```
 
 Na Aba `Scripts` em `Post-response` cole o script abaixo:
