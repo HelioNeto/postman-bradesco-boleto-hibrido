@@ -28,11 +28,14 @@ const aud = pm.globals.get("server_to_server_aud_proxy");
 const authTokenUrl = pm.globals.get("server_to_server_auth_token_proxy");
 const accessToken = pm.globals.get("server_to_server_access_token_proxy");
 const privateKey = pm.globals.get("server_to_server_privateKey_proxy");
+//Se quiser confirmar se estão preenchidas as variaveis, descomente a linha que quer ver no log.
+/*
 console.log(aud);
 console.log(authTokenUrl);
 console.log(accessToken);
 console.log(privateKey);
-
+return;
+*/
 /**
  * Constroi um texto referente aos dados do request
  * Este valor será assinado pela chave privada do requisitante posteriormente e incluido no header X-Brad-Signature
@@ -133,5 +136,3 @@ pm.sendRequest(requestTokenOptions , function(err, response){
     pm.variables.set('timestamp', momentTmp);
     pm.variables.set('AuthBearer', bearer);
 });
-
-//pm. = Recursos do Postman, só funcionando no Script do Postman.
