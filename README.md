@@ -35,7 +35,7 @@ Méthodo: `POST`
 URL:
 
 ```
-https://proxy.api.prebanco.com.br/v1/boleto/registrarBoleto
+https://proxy.api.prebanco.com.br/v1/boleto-hibrido/registrar-boleto
 ```
 
 Na Aba `Headers` clique em `Book Edit`, para mudar de Edit para texto, e cole os header que estão abaixo.
